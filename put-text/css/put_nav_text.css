@@ -1,0 +1,159 @@
+nav{
+    width: 1519px;
+    height: 52px;
+    /* background-color: rgb(244, 244, 244); */
+}
+
+/* 头部内容居中div */
+.nav_center_div{
+    width: 1032px;
+    height: 50px;
+    margin: 0 290px;
+}
+
+/* 项目图片 */
+.nav_center_div .nav_a_img{
+    float: left;
+    width: 115px;
+    height: 50px;
+}
+
+/* 中间线 */
+.center_line{
+    float: left;
+    font-size: 25px;
+    color: #ebebeb;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* 发布文章字体 */
+.h3_put{
+    float: left;
+    margin-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-synthesis: style;
+}
+
+/* 发布文章规范 */
+.norm{
+    float: left;
+    margin-left: 550px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* 经过发布文章规范 */
+.nav_center_div .norm:hover{
+    color: #9999A6;
+}
+
+/* 消息点 */
+.nav_center_div .point{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    color: #666;
+    margin-left: 50px;
+    font-size: 28px;
+}
+
+/* 经过点的时候 */
+.nav_center_div .point:hover .my_info{
+    display: block;
+}
+
+/* 经过显示我的信息 */
+.nav_center_div .point .my_info{
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 1060px;
+    width: 200px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgb(18 18 18 / 10%);
+    z-index: 203;
+    background-color: white;
+}
+
+/* 每个li */
+.nav_center_div .point .my_info li{
+    width: 200px;
+    height: 50px;
+}
+
+/* li字体 */
+.nav_center_div .point .my_info li span{
+    width: 200px;
+    height: 50px;
+    margin-left: 25px;
+    line-height: 50px;
+    font-size: 15px;
+    color: #8590A6;
+}
+
+/* 经过每个li */
+.nav_center_div .point .my_info li:hover{
+    background-color: #F6F6F6;
+}
+
+/* 用户头像 */
+.nav_center_div button{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 用户头像图片 */
+.nav_center_div button img{
+    width: 30px;
+    height: 30px
+}
+
+/* 鼠标经过显示的个人信息 */
+.nav_center_div button .picture_info{
+    display: none;
+    top: 40px;
+    left: 1175px;
+    position: absolute;
+    width: 118px;
+    height: 156px;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgb(18 18 18 / 10%);
+    z-index: 203;
+    background-color: white;
+}
+
+.nav_center_div button .picture_info ul li{
+    width: 118px;
+    height: 40px;
+}
+
+/* 经过每个li的样式 */
+.nav_center_div button .picture_info ul li:hover{
+    background-color: #F6F6F6;
+}
+
+.nav_center_div button .picture_info ul li a{
+    width: 118px;
+    height: 36px;
+    font-size: 15px;
+    color: #8590A6;
+    line-height:40px;
+}
+
+/* 鼠标经过显示的个人信息 */
+.nav_center_div button:hover .picture_info{
+    display: block;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://yuanchanglin.com/file/jq.js"></script>
+</head>
+<body>
+
+    
+    <input id="img" type="file" > <br />
+    <img width="200px"  src="" alt="" />
+	<script type="text/javascript">
+        // 文件输入框value属性变化时(用户选择了图片) ,运行upload1函数
+        $("#img").change(upload1)
+		function upload1() {
+				var formData =new FormData();   //新建表单元素
+                formData.append('file',$('#img')[0].files[0]);   //添加上传文件变量，获得文件真实信息，解决虚拟路径
+                console.log( document.getElementById("img").files[0])
+                $.ajax({
+                    type:'POST',
+                    // http://yuanchanglin.com:8080/editorUpload // wangEditor图片上传服务器
+                    url:'http://yuanchanglin.com:8080/upload',// 图片上传服务器
+                    data:formData,
+                    processData: false, // 告诉jQuery不要去处理发送的数据
+                    contentType: false, // 告诉jQuery不要去设置Content-Type请求头
+					async:false,
+                    success:function(res){
+                        console.log("服务器返回数据:",res)
+                        $("img").prop("src",res.data)
+                    }
+                })
+
+                //return false
+            };
+
+</script>
+</body>
+</html>

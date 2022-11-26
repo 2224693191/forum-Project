@@ -1,0 +1,211 @@
+.article {
+    width: 1519px;
+    height: 1006px;
+    background-color: #F6F6F6;
+}
+
+.article #editor—wrapper {
+    /* 取消边框 */
+    /* border: 1px solid #ccc; */
+    z-index: 100;
+    /* 按需定义 */
+}
+
+.article #toolbar-container {
+    position: sticky; 
+    top: 0px;
+    border-bottom: 1px solid #ccc;
+    z-index: 200;
+}
+
+.article #editor-container {
+    height: 500px;
+}
+
+/* 自定义属性 */
+/* 将工具栏居中 */
+.w-e-bar {
+    padding: 10px 70px;
+}
+
+
+/* 编辑器div */
+.editor_div{
+    position: relative;
+    top: 50px;
+    left: 400px;
+    width: 800px;
+    height: 100%;
+}
+
+
+/* 文章标题div */
+.title_text_div{
+    position: relative;
+    height: 77px;
+    border-bottom: 1px solid #ccc;
+    background-color: #FFFFFF;
+}
+
+/* 标题文本框样式 */
+#title_input{
+    border: 0;
+    font-size: 55px;
+    color: black;
+    height: 45px;
+    font-size: 32px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 45px;
+    margin-top: 15px;
+    margin-left: 7px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    outline:none;
+    resize:none;
+}
+
+/* 发布设置div */
+.issue_text_div{
+    position: absolute;
+    top: 578px;
+    width: 800px;
+    height: 244px;
+    /* border: 1px solid; */
+    background-color: #FFFFFF;
+}
+
+/* 发布设置 */
+.issue_text_p{
+    margin: 0 auto;
+    width: 760px;
+    height: 62px;
+    line-height: 62px;
+    min-width: 0;
+    color: #444444;
+    line-height: 61px;
+    font-size: 17px;
+    font-weight: 500;
+    border-top: 1px solid #ccc;
+}
+
+/* 添加封面 */
+.add_cover_div{
+    margin: 0 auto;
+    width: 760px;
+    height: 130px;
+}
+
+/* 添加封面字体 */
+.add_text{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #444444;
+    margin-right: 3px;
+    float: left;
+    line-height: 38px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 110px;
+    padding-left: 10px;
+    height: 130px;
+}
+
+/* 添加封面图片 */
+.add_image_div{
+    float: right;
+    width: 640px;
+    height: 130px;
+}
+
+/* 添加封面图片div */
+.cover_image{
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px dashed;
+    border-color: #8590A6;
+    align-items: center;
+    -webkit-box-align: center;
+}
+
+.cover_image span{
+    position: absolute;
+    top: 105px;
+    left: 178px;
+    color: #999999;
+    font-size: 13px;
+}
+
+/* 上传的封面图片 */
+.cover_image img{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    z-index: 200;
+}
+
+/* 上传图片功能 */
+#upload_img{
+    /* display: none; */
+    margin: 77px 160px;
+}
+
+/* 图片格式字体 */
+.image_font{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #999999;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* 添加分类 */
+.article_classify{
+    margin: 0 auto;
+    width: 760px;
+    height: 40px;
+}
+
+/* 添加分类字体 */
+.article_classify_font{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #444444;
+    margin-right: 3px;
+    float: left;
+    line-height: 38px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 110px;
+    padding-left: 10px;
+    height: 40px;
+    float: left;
+}
+
+
+/* 分类按钮 */
+.btn_classify{
+    width: 82px;
+    height: 32px;
+    margin: 4px 7px;
+    color: var(--black01);
+    font-size: 14px;
+    line-height: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* 样式切换 */
+.btn_classify_over{
+    background-color: #056DE8;
+    color: white;
+}

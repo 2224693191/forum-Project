@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var data = {
+        userList: [
+            {
+                id: 1,
+                name: "芜湖",
+                username: "qw123",
+                password: "123456",
+                sex: "男",
+                age: 28,
+                sign: "如果没有见过光明，我本可以忍受黑暗",
+                birthday: "2002-12-01",
+                location: "台湾",
+            },
+            {
+                id: 2,
+                name: "起飞",
+                username: "px456",
+                password: "123456",
+                sex: "女",
+                age: 20,
+                sign: "我也许能再一次找到活着的目的，也许能再一次找到活着的意义，为了那些人，奉献出我的人生的话……",
+                birthday: "2000-02-11",
+                location: "山东",
+            },
+            {
+                id: 3,
+                name: "可欣",
+                username: "po741",
+                password: "123456",
+                sex: "男",
+                age: 15,
+                sign: "韬光养晦，静待时机",
+                birthday: "1992-10-11",
+                location: "福建",
+            },
+            {
+                id: 4,
+                name: "晴天",
+                username: "ef145",
+                password: "123456",
+                sex: "男",
+                age: 28,
+                sign: "我已在这可怕的控制欲中溺毙。",
+                birthday: "2022-08-01",
+                location: "中国",
+            },
+            {
+                id: 5,
+                name: "夏琴",
+                username: "gc459",
+                password: "123456",
+                sex: "女",
+                age: 15,
+                sign: "欲买桂花同载酒，只可惜故人，何日再见啊。",
+                birthday: "1999-06-05",
+                location: "美国",
+            },
+        ],
+    }
+
+    // console.log(data);
+
+    // 根据指定id返回相应值
+    var newArr = null;
+    for(var i = 0;i < data.userList.length;i++){
+        if(data.userList[i].sex == "女"){
+            newArr = data.userList[i];
+        }
+    }
+    console.log(newArr);
+
+    // for(var i = 0;i < data.userList.length;i++){
+    //     console.log(data.userList[i]);
+    // }
+
+</script>
+</html>
